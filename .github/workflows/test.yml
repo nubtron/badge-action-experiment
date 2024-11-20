@@ -8,6 +8,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
     name: A job to test this action
+
+    permissions:
+      contents: write
+
     steps:
 
     # Get current banch name to use it as dest directory
